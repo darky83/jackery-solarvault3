@@ -8,7 +8,6 @@ from homeassistant.components.binary_sensor import (
     BinarySensorEntityDescription,
 )
 from homeassistant.components.sensor import (
-    STATE_CLASS_TOTAL_INCREASING,
     SensorDeviceClass,
     SensorEntityDescription,
     SensorStateClass,
@@ -27,6 +26,7 @@ DOMAIN = "jackery"
 
 # Polling interval
 POLLING_INTERVAL_SEC = 60
+STATE_CLASS_TOTAL_INCREASING = "total_increasing"
 
 
 @dataclass
