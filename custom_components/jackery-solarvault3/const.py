@@ -22,7 +22,7 @@ from homeassistant.const import (
 )
 
 # The domain of your integration. Should be unique.
-DOMAIN = "jackery"
+DOMAIN = "jackery-solarvault3"
 
 # Polling interval
 POLLING_INTERVAL_SEC = 60
