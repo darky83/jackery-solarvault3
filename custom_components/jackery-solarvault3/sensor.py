@@ -70,9 +70,9 @@ class JackerySensor(CoordinatorEntity, SensorEntity):
     @property
     def native_value(self) -> str | int | float | datetime | None:
         """Return the state of the sensor."""
+        if self.entity_description.value:
+            return self.entity_description.value(self.coordinator.data)
         value = self.coordinator.data.get(self.entity_description.key)
         if value is None:
             return None
-        if self.entity_description.value:
-            return self.entity_description.value(value)
         return value

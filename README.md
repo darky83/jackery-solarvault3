@@ -3,8 +3,8 @@
 # Jackery Home Assistant Integration
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![maintainer](https://img.shields.io/badge/maintainer-%40theak-blue.svg)](https://github.com/theak)
-[![version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://github.com/theak/jackery-homeassistant)
+[![maintainer](https://img.shields.io/badge/maintainer-%40theak-blue.svg)](https://github.com/darky83)
+[![version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/darky83/jackery-solarvault3)
 
 Custom Home Assistant integration for monitoring Jackery portable power stations. This integration provides real-time sensor data for your Jackery devices including battery status, power output, temperature, and more.
 
@@ -48,20 +48,20 @@ Custom Home Assistant integration for monitoring Jackery portable power stations
 
 1. Make sure you have [HACS](https://hacs.xyz/) installed
 2. Add this repository as a custom repository in HACS
-3. Search for "Jackery" in the integrations section
+3. Search for "Jackery-SolarVault3" in the integrations section
 4. Click "Download" and restart Home Assistant
 
 ### Option 2: Manual Installation
 
 1. Download or clone this repository
-2. Copy the `jackery` folder to your `config/custom_components/` directory
+2. Copy the `jackery-solarvault3` folder to your `config/custom_components/` directory
 3. Restart Home Assistant
 
 ## Configuration
 
 1. In Home Assistant, go to **Settings** → **Devices & Services**
 2. Click **Add Integration**
-3. Search for "Jackery" and select it
+3. Search for "jackery-solarvault3" and select it
 4. Enter your Jackery account credentials:
    - **Username**: Your Jackery account email/username
    - **Password**: Your Jackery account password
@@ -156,6 +156,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
+- Based on work performed already by https://github.com/rinsekloek/jackery-homeassistant
+- Based on work performed already by https://github.com/theak/jackery-homeassistant
 - Based heavily on code from https://qiita.com/Hsky16/items/c163137265a87186ac39
 - Thanks to the Home Assistant community for the excellent framework
 - Special thanks to all contributors and users who provide feedback

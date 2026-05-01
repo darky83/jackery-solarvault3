@@ -12,6 +12,16 @@ logging.basicConfig(
 )
 
 
+def print_flattened(data, prefix=""):
+    """Print flattened key-value pairs from nested dictionaries."""
+    for key, value in data.items():
+        full_key = f"{prefix}-{key}" if prefix else key
+        if isinstance(value, dict):
+            print_flattened(value, full_key)
+        else:
+            print(f"  - {full_key}: {value}")
+
+
 def test_jackery_api(username, password):
     """Test the Jackery API connection."""
     print(f"Testing Jackery API with username: {username}")
@@ -49,15 +59,17 @@ def test_jackery_api(username, password):
             properties = device_detail.get("data", {}).get("properties", {})
             print(f"✅ Device detail retrieved with {len(properties)} properties")
 
-            for key, value in properties.items():
-                print(f"  - {key}: {value}")
+            print("#############################################")
+
+            print_flattened(properties)
 
             device_stat = api.get_device_stat(device_id)
             data = device_stat.get("data", {})
             print(f"✅ Device stats retrieved with {len(data)} properties")
 
-            for key, value in data.items():
-                print(f"  - {key}: {value}")
+            print_flattened(data)
+
+
 
         return True
 

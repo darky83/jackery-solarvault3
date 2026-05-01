@@ -1,0 +1,12 @@
+{
+    "domain": "jackery-solarvault3",
+    "name": "Jackery-SolarVault3",
+    "version": "0.0.1",
+    "documentation": "https://github.com/darky83/jackery-solarvault3/blob/main/README.md",
+    "issue_tracker": "https://github.com/darky83/jackery-solarvault3/issues",
+    "codeowners": ["@darky83"],
+    "requirements": ["requests>=2.31.0", "pycryptodomex>=3.19.0"],
+    "icon": "icon.png",
+    "iot_class": "cloud_polling",
+    "config_flow": true
+}
