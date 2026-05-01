@@ -3,7 +3,7 @@
 # Jackery Home Assistant Integration
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![maintainer](https://img.shields.io/badge/maintainer-%40theak-blue.svg)](https://github.com/darky83)
+[![maintainer](https://img.shields.io/badge/maintainer-%40darky83-blue.svg)](https://github.com/darky83)
 [![version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/darky83/jackery-solarvault3)
 
 Custom Home Assistant integration for monitoring Jackery portable power stations. This integration provides real-time sensor data for your Jackery devices including battery status, power output, temperature, and more.
